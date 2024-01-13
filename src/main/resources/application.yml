@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+upload_path: 'D:/face'
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER # 解决swaggerUI不匹配接口
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB # 单个文件的最大值
+      max-request-size: 10MB # 上传文件总的最大值
